@@ -26,6 +26,16 @@ For each experiment (a `scale` × `crf` combination):
 The default experiment matrix covers scales **1.0 / 0.5 / 0.25**, each with
 9 CRF values (10–51) — 27 combinations per video.
 
+## Example results
+
+Same frame, YOLO detections before and after compression (scale=1.0, CRF=40).
+At higher CRF, several low-confidence boxes disappear and remaining
+confidence scores drop noticeably:
+
+| Original | CRF 40 |
+|---|---|
+| ![Original frame with YOLO detections](docs/images/original.png) | ![Frame compressed at CRF 40 with YOLO detections](docs/images/crf40.png) |
+
 ## Requirements
 
 ```bash
